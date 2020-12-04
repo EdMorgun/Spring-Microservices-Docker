@@ -1,0 +1,71 @@
+version: '3.4'
+services:
+ hotelDB:
+   image: mysql:8.0
+   expose:
+     - "3306"
+   ports:
+     - "3306:3306"
+   restart: always
+   volumes:
+     - ./hotelDB:/var/lib/mysql:rw
+   environment:
+     MYSQL_USER: root
+     MYSQL_PASSWORD: 123456
+     MYSQL_DATABASE: hotel
+     MYSQL_ROOT_PASSWORD: 123456
+
+ eurekaserver:
+   restart: always
+   expose:
+     - "8761"
+   ports:
+     - "8761:8761"
+   build:
+     context: eurekaserver
+     dockerfile: Dockerfile
+
+ api-gateway:
+   restart: always
+   expose:
+     - "8080"
+   ports:
+     - "8080:8080"
+   build:
+     context: api-gateway
+     dockerfile: Dockerfile
+
+ authentication:
+   restart: always
+   expose:
+     - "8081"
+   build:
+     context: authentication
+     dockerfile: Dockerfile
+
+ search:
+   restart: always
+   expose:
+     - "8082"
+   build:
+     context: search
+     dockerfile: Dockerfile
+
+ booking:
+   restart: always
+   expose:
+     - "8083"
+   build:
+     context: booking
+     dockerfile: Dockerfile
+
+ feedback:
+   restart: always
+   expose:
+     - "8084"
+   build:
+     context: feedback
+     dockerfile: Dockerfile
+
+volumes:
+  hotelDB:

@@ -1,0 +1,173 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: white;
+}
+
+div.topLine {
+    height: 75px;
+    background: #f6efca;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-radius: 0 0 50px 50px;
+    color: white;
+    margin-inline: 50px;
+}
+
+.trump {
+    font-size: 45px;
+    color: #1c1d65;
+    font-family: herculanum,fantasy;
+    margin-left: 20px;
+}
+
+div.logRegButs, form.logRegButs {
+    height: 45px;
+    text-align: center;
+    position: relative;
+    outline: none;
+}
+
+.logRegButs button, .logRegButs input {
+    outline: none;
+    text-decoration: none;
+    display: inline-block;
+    height: 30px;
+    background: black;
+    font: 14px serif;
+    color: white;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.logRegButs label {
+    font: 28px serif;
+    padding-right: 10px;
+    color: black;
+}
+
+#multiContainer {
+    margin-inline: 50px;
+}
+
+.lineo {
+    width: 15%;
+    margin-inline: 35px;
+}
+
+.delRoom {
+    width: 15%;
+    height:100%;
+    margin-left: 30px;
+}
+
+.logRegButs button:hover, .logRegButs input:hover {
+    background: black;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+form.logRegForm {
+    display: block;
+    position: fixed;
+    height: auto;
+    width: 15%;
+    border: 1px solid black;
+    color: black;
+    background: white;
+    right: 0px;
+    margin-right: 50px;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.logRegForm input, .logRegForm button {
+    width: calc(100% - 2vw);
+    margin-left: 1vw;
+    border-radius: 3px;
+    display: block;
+    text-align: center;
+}
+
+.cancelPerfButs:hover {
+    background-color: darkolivegreen;
+    cursor: pointer;
+    outline: 1px solid black;
+}
+
+a {
+    text-decoration: none;
+}
+
+.sidebut {
+    width: 20%;
+    height: 30px;
+    color: black;
+    background: #a6ee9f;
+    text-align: center;
+    line-height: 30px;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebut:hover {
+    background: #069b16;
+    outline: 1px solid black;
+    cursor: pointer;
+}
+
+.toptrump {
+    margin-inline: 50px;
+    background-color: #1d4ddb4f;
+    border: 1px solid;"
+}
+
+.ttrump {
+    margin-inline: 50px;
+        background-color: #eeed91;
+    border-radius: 20px 20px 0 0;"
+}
+
+#searchForm {
+    margin: 0 auto;
+    font: 18px serif;
+    display: block;
+    width: 70%;
+}
+
+#searchForm input {
+    padding-left: 10px;
+    width: 100%;
+    height: 30px;
+    border-radius: 100px;
+    border: 1px solid black;
+    margin: 0;
+    outline: 0;
+}
+
+div.foodBlock {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 2px solid grey;
+}
+
+.foodBlock div, input {
+    display: inline-block;
+    text-align: center;
+    padding: 5px 0;
+}
+
+.markFeedback, .appointment {
+        height: 48px;
+        width: 45px;
+        border: none;
+    cursor: pointer;
+}
+
+#newDoctor div {
+    display: inline-block;
+    width: 20%;
+}
+
